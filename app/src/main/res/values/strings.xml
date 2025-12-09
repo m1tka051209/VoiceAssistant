@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ImplicitIntent</string>
+    <string name="copy">Копировать</string>
+    <string name="info">(после нажатия произнесите вопрос)</string>
+</resources>
