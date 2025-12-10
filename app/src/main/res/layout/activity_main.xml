@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="calibri"
         android:paddingBottom="5dp"
-        android:text="Задать вопрос"
+        android:text="@string/action"
         android:textColor="@android:color/white"
         android:textSize="18sp"
         android:textStyle="bold" />
@@ -40,6 +40,7 @@
 
     <Button
         android:id="@+id/btn_copy"
+        android:backgroundTint="@color/blue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/copy" />
