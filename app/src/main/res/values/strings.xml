@@ -1,6 +1,17 @@
 <resources>
-    <string name="app_name">ImplicitIntent</string>
+    <string name="app_name">VoiceAssistantTranslate</string>
     <string name="copy">Копировать</string>
     <string name="info">(после нажатия произнесите вопрос)</string>
     <string name="action">Задать вопрос</string>
+    <string name="main_text">Выберите, что хотите сделать</string>
+    <string name="text_eng_ru">Распознать и перевести речь (с английского на русский)</string>
+    <string name="text_ru_eng">Распознать и перевести речь (с русского на английский)</string>
+    <string name="img_eng_ru">Распознать и перевести изображение (с английского на русский)</string>
+    <string name="img_ru_eng">Распознать и перевести изображение (с русского на английский)</string>
+    <string name="text1">Распознать и перевести речь (с английского на русский)</string>
+    <string name="click_and_talk">Нажмите и говорите</string>
+    <string name="translate">Перевести?</string>
+    <string name="text2">Распознать и перевести речь (с русского на английский)</string>
+    <string name="text3">Распознать и перевести изображение (с английского на русский)</string>
+    <string name="text4">Распознать и перевести изображение (с русского на английский)</string>
 </resources>

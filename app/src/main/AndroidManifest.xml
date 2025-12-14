@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <application
         android:allowBackup="true"
@@ -12,6 +11,27 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.VoiceAssistant">
         <activity
+            android:name=".activities.image.GetTextFromImage"
+            android:exported="false" />
+        <activity
+            android:name=".activities.text.GetTextFromVoice"
+            android:exported="false" />
+        <activity
+            android:name=".activities.image.ImageRuToEng"
+            android:exported="false" />
+        <activity
+            android:name=".activities.image.ImageEngToRu"
+            android:exported="false" />
+        <activity
+            android:name=".activities.text.TextRuToEng"
+            android:exported="false" />
+        <activity
+            android:name=".activities.text.TextEngToRu"
+            android:exported="false" />
+        <activity
+            android:name=".activities.UserText"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
@@ -20,6 +40,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".activities.GetUserText"
+            android:exported="false" />
     </application>
 
 </manifest>
