@@ -1,47 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
-    android:orientation="vertical">
+    tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/main_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="calibri"
-        android:paddingBottom="5dp"
-        android:text="@string/action"
-        android:textColor="@android:color/white"
-        android:textSize="18sp"
-        android:textStyle="bold" />
-
-    <ImageButton
-        android:id="@+id/question"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-        android:src="@android:drawable/ic_btn_speak_now"
-        app:tint="@android:color/white" />
-
-    <ScrollView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-
-        <TextView
-            android:id="@+id/text"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:text="@string/info"
-            android:textAlignment="center"
-            android:textColor="@android:color/darker_gray"
-            android:textSize="12sp" />
-    </ScrollView>
+        android:text="@string/main_text"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/text_eng_ru"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btn_copy"
-        android:backgroundTint="@color/blue"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/copy" />
-</LinearLayout>
+        android:id="@+id/text_eng_ru"
+        android:layout_width="310dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/sea_blue"
+        android:text="@string/text_eng_ru"
+        app:layout_constraintBottom_toTopOf="@+id/text_ru_eng"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_text" />
+
+    <Button
+        android:id="@+id/text_ru_eng"
+        android:layout_width="310dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/sea_blue"
+        android:text="@string/text_ru_eng"
+        app:layout_constraintBottom_toTopOf="@+id/voice_eng_ru"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_eng_ru" />
+
+    <Button
+        android:id="@+id/voice_eng_ru"
+        android:layout_width="310dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/sea_blue"
+        android:text="@string/voice_eng_ru"
+        app:layout_constraintBottom_toTopOf="@+id/voice_ru_eng"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_ru_eng" />
+
+    <Button
+        android:id="@+id/voice_ru_eng"
+        android:layout_width="310dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/sea_blue"
+        android:text="@string/voice_ru_eng"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.77" />
+
+    <!--    <Button-->
+<!--        android:id="@+id/photo_eng_ru"-->
+<!--        android:layout_width="310dp"-->
+<!--        android:layout_height="60dp"-->
+<!--        android:backgroundTint="@color/sea_blue"-->
+<!--        android:text="@string/photo_eng_ru"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/photo_ru_eng"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/voice_ru_eng" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/photo_ru_eng"-->
+<!--        android:layout_width="310dp"-->
+<!--        android:layout_height="60dp"-->
+<!--        android:backgroundTint="@color/sea_blue"-->
+<!--        android:text="@string/photo_ru_eng"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/photo_eng_ru" />-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

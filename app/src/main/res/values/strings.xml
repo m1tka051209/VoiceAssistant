@@ -1,6 +1,25 @@
 <resources>
-    <string name="app_name">ImplicitIntent</string>
+    <string name="app_name">VoiceAssistantTranslate</string>
     <string name="copy">Копировать</string>
-    <string name="info">(после нажатия произнесите вопрос)</string>
-    <string name="action">Задать вопрос</string>
+    <string name="voice_info">После нажатия произнесите вопрос</string>
+    <string name="voice_action">Задать вопрос</string>
+    <string name="main_text">Выберите, что хотите сделать</string>
+    <string name="voice_eng_ru">Распознать и перевести речь (с английского на русский)</string>
+    <string name="voice_ru_eng">Распознать и перевести речь (с русского на английский)</string>
+    <string name="photo_eng_ru">Распознать и перевести изображение (с английского на русский)</string>
+    <string name="photo_ru_eng">Распознать и перевести изображение (с русского на английский)</string>
+    <string name="text1">Распознать и перевести речь (с английского на русский)</string>
+    <string name="click_and_talk">Нажмите и говорите</string>
+    <string name="translate">Перевести?</string>
+    <string name="text2">Распознать и перевести речь (с русского на английский)</string>
+    <string name="text3">Распознать и перевести изображение (с английского на русский)</string>
+    <string name="text4">Распознать и перевести изображение (с русского на английский)</string>
+    <string name="text_eng_ru">Перевести текст (с английского на русский)</string>
+    <string name="text_ru_eng">Перевести текст (с русского на английский)</string>
+    <string name="hint_for_some_people">Голосовой ввод</string>
+    <string name="back"><![CDATA[<— Назад]]></string>
+    <string name="text_info">Введите текст</string>
+    <string name="photo_info">Ввод с фото</string>
+    <string name="photo_action">Сделайте фото</string>
+    <string name="voice_over">Озвучить</string>
 </resources>
