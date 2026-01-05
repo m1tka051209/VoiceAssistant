@@ -35,32 +35,55 @@
         android:layout_height="60dp"
         android:backgroundTint="@color/sea_blue"
         android:text="@string/text_ru_eng"
-        app:layout_constraintBottom_toTopOf="@+id/img_eng_ru"
+        app:layout_constraintBottom_toTopOf="@+id/voice_eng_ru"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_eng_ru" />
 
     <Button
-        android:id="@+id/img_eng_ru"
+        android:id="@+id/voice_eng_ru"
         android:layout_width="310dp"
         android:layout_height="60dp"
         android:backgroundTint="@color/sea_blue"
-        android:text="@string/img_eng_ru"
-        app:layout_constraintBottom_toTopOf="@+id/img_ru_eng"
+        android:text="@string/voice_eng_ru"
+        app:layout_constraintBottom_toTopOf="@+id/voice_ru_eng"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_ru_eng" />
 
     <Button
-        android:id="@+id/img_ru_eng"
+        android:id="@+id/voice_ru_eng"
         android:layout_width="310dp"
         android:layout_height="60dp"
         android:backgroundTint="@color/sea_blue"
-        android:text="@string/img_ru_eng"
+        android:text="@string/voice_ru_eng"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/img_eng_ru" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.77" />
+
+    <!--    <Button-->
+<!--        android:id="@+id/photo_eng_ru"-->
+<!--        android:layout_width="310dp"-->
+<!--        android:layout_height="60dp"-->
+<!--        android:backgroundTint="@color/sea_blue"-->
+<!--        android:text="@string/photo_eng_ru"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/photo_ru_eng"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/voice_ru_eng" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/photo_ru_eng"-->
+<!--        android:layout_width="310dp"-->
+<!--        android:layout_height="60dp"-->
+<!--        android:backgroundTint="@color/sea_blue"-->
+<!--        android:text="@string/photo_ru_eng"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/photo_eng_ru" />-->
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

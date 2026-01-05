@@ -9,10 +9,6 @@ import android.widget.TextView;
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.voiceassistant.activities.image.ImageEngToRu;
-import com.example.voiceassistant.activities.image.ImageRuToEng;
-import com.example.voiceassistant.activities.text.TextEngToRu;
-import com.example.voiceassistant.activities.text.TextRuToEng;
 import com.example.voiceassistant.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
@@ -24,9 +20,19 @@ public class MainActivity extends AppCompatActivity {
         ActivityMainBinding binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        binding.textEngRu.setOnClickListener(v -> startActivity(new Intent(this, TextEngToRu.class)));
-        binding.textRuEng.setOnClickListener(v -> startActivity(new Intent(this, TextRuToEng.class)));
-        binding.imgEngRu.setOnClickListener(v -> startActivity(new Intent(this, ImageEngToRu.class)));
-        binding.imgRuEng.setOnClickListener(v -> startActivity(new Intent(this, ImageRuToEng.class)));
+        binding.textEngRu.setOnClickListener(v -> intentManager("en", "ru", "text"));
+        binding.textRuEng.setOnClickListener(v -> intentManager("ru", "en", "text"));
+        binding.voiceEngRu.setOnClickListener(v -> intentManager("en", "ru", "voice"));
+        binding.voiceRuEng.setOnClickListener(v -> intentManager("ru", "en", "voice"));
+//        binding.photoEngRu.setOnClickListener(v -> intentManager("en", "ru", "photo"));
+//        binding.photoRuEng.setOnClickListener(v -> intentManager("ru", "en", "photo"));
+    }
+
+    private void intentManager(String source, String target, String type) {
+        Intent intent = new Intent(this, TranslatorActivity.class);
+        intent.putExtra("SOURCE_LANG", source);
+        intent.putExtra("TARGET_LANG", target);
+        intent.putExtra("INPUT_TYPE", type);
+        startActivity(intent);
     }
 }
